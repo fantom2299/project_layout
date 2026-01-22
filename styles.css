@@ -7,49 +7,431 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
-  padding-top: 29px;
+  padding: 29px 0 27px 0;
+  border-bottom: 1px solid #dddddd;
 }
 
-.header_logo {
+.header__logo {
   background: url(./img/logo.jpg) no-repeat;
   width: 140px;
   height: 22px;
   margin: 0 296px 0 165px;
 }
 
-.header__nav {
+.header___nav {
   display: flex;
   gap: 60px;
 }
 
-.header__nav--search-cabinet {
+.header__controls {
   display: flex;
   gap: 30px;
 }
 
-.header__nav-link {
+.header__link {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0;
-  color: #4C5866;
+  color: #4c5866;
 }
 
-.header__nav-search {
+.header__search {
   background: url(./img/Search.png);
   width: 24px;
   height: 24px;
-  color: #4C5866;
+  color: #4c5866;
 }
 
-.header__nav-cabinet {
+.header__cabinet {
   background: url(./img/log_in.png);
+  width: 24px;
+  height: 24px;
+}
+
+main {
+  margin: 0 165px 0 165px;
+}
+
+.banner {
+  display: flex;
+  gap: 125px;
+  min-width: 1120px;
+  height: 620px;
+}
+
+.banner__content {
+  width: 444px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+}
+
+.banner__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #4c5866;
+  width: 444px;
+  padding-bottom: 30px;
+}
+
+.banner__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #85859b;
+  width: 445px;
+  height: 110px;
+  margin-bottom: 30px;
+}
+
+.banner__button {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #7875fe;
+  width: 255px;
+  height: 70px;
+  border: 1px solid #7875fe;
+  padding-top: 22px;
+  text-align: center;
+}
+
+.banner__image {
+  background: url(./img/paper.png) no-repeat;
+  width: 540px;
+  height: 560px;
+  margin-top: 60px;
+}
+
+.fon_background {
+  background-color: #ebebeb;
+  margin: 0 calc(-50vw + 50%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.products {
+  padding-top: 90px;
+}
+
+.products__container {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #c0c0c0;
+  padding-top: 20px;
+}
+
+.product-card {
+  display: flex;
+  gap: 30px;
+  width: 350px;
+  height: 139px;
+}
+
+.product-card__image--v1 {
+  background: url(./img/Cards-v1.png) no-repeat;
+  width: 160px;
+  height: 118px;
+}
+
+.product-card__version--v1,
+.product-card__version--v2,
+.product-card__version--v3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.product-card__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #85859b;
+}
+
+.product-card__image--v2 {
+  background: url(./img/Cards-v2.png) no-repeat;
+  width: 160px;
+  height: 118px;
+}
+
+.product-card__image--v3 {
+  background: url(./img/Cards-v3.png) no-repeat;
+  width: 160px;
+  height: 118px;
+}
+
+.product__banner {
+  padding-top: 90px;
+}
+
+.product__banner--image {
+  background: url(./img/v8.png) no-repeat;
+  width: 730px;
+  height: 564px;
+}
+
+.product__banner--container {
+  display: flex;
+  gap: 30px;
+}
+
+.product__banner--info {
+  width: 350px;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: #666666;
+  padding-bottom: 20px;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: #85859b;
+}
+
+.production {
+  display: flex;
+  gap: 30px;
+  padding: 90px 0 90px 0;
+}
+
+.production__packaging,
+.production__bags,
+.production__cases,
+.production__other__products {
+  width: 265px;
+  height: 465px;
+}
+
+.production__packaging--image {
+  background: url(./img/packaging.png) no-repeat;
+  width: 255px;
+  height: 180px;
+}
+
+.production__bags--image {
+  background: url(./img/bags.png) no-repeat;
+  width: 255px;
+  height: 180px;
+}
+
+.production__cases--image {
+  background: url(./img/cases.png) no-repeat;
+  width: 255px;
+  height: 180px;
+}
+
+.production__other__products--image {
+  background: url(./img/other-products.png) no-repeat;
+  width: 255px;
+  height: 180px;
+}
+
+.production__packaging--title,
+.production__bags--title,
+.production__cases--title,
+.production__other__products--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  color: #666666;
+  padding-top: 20px;
+}
+
+.production__packaging--info__circulation,
+.production__bags--info__circulation,
+.production__cases--info__circulation,
+.production__other__products--info__circulation {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #b5b5bd;
+  padding-top: 8px;
+}
+
+.production__packaging--description,
+.production__bags--description,
+.production__cases--description,
+.production__other__products--description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: #85859b;
+  padding: 8px 0 20px 0;
+}
+
+.read__more {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #7875fe;
+  line-height: 100%;
+}
+
+.partners {
+  background-color: #ebebeb;
+  margin: 0 calc(-50vw + 50%);
+  height: 315px;
+  display: flex;
+  gap: 30px;
+  padding: 90px 0 0 252px;
+}
+
+.hahnemuhle {
+  background: url(./img/hahnemuhle.png) no-repeat;
+  width: 255px;
+  height: 135px;
+}
+
+.canson {
+  width: 255px;
+  height: 135px;
+  background: url(./img/canson.png) no-repeat;
+}
+
+.royal__talens {
+  background: url(./img/royal__talens.png) no-repeat;
+  width: 255px;
+  height: 135px;
+}
+
+.fabriano {
+  background: url(./img/fabriano.png) no-repeat;
+  width: 255px;
+  height: 135px;
+}
+
+.sketchbook {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 90px;
+}
+
+.sketchbook__content {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 272px;
+}
+
+.sketchbook__content--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #666666;
+  line-height: 100%;
+}
+
+.sketchbook__content--description {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  color: #85859b;
+  line-height: 170%;
+}
+
+.sketchbook__content__button {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #7875fe;
+  width: 255px;
+  height: 70px;
+  border: 1px solid #7875fe;
+  padding-top: 22px;
+  text-align: center;
+}
+
+.sketchbook__image {
+  background: url(./img/pic.png) no-repeat;
+  width: 730px;
+  height: 410px;
+}
+
+footer {
+  background-color: #4C5866;
+  height: 80px;
+  margin: 0 calc(-50vw + 50%);
+  padding-left: 252px;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 787px;
+  padding-top: 29px;
+}
+
+.footer_social {
+  display: flex;
+  gap: 30px;
+}
+
+.logo_image {
+  background: url(./img/logo_footer.png) no-repeat;
+  width: 140px;
+  height: 22px;
+}
+
+.facebook {
+  background: url(./img/facebook.png) no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.twitter {
+  background: url(./img/twitter.png) no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.instagram {
+  background: url(./img/instagram.png) no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.youtube {
+  background: url(./img/youtube.png) no-repeat;
   width: 24px;
   height: 24px;
 }
