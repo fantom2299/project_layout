@@ -357,6 +357,7 @@ main {
   font-size: 40px;
   color: #666666;
   line-height: 100%;
+  padding-bottom: 8px;
 }
 
 .sketchbook__content--description {
@@ -365,6 +366,7 @@ main {
   font-size: 18px;
   color: #85859b;
   line-height: 170%;
+  padding-bottom: 30px;
 }
 
 .sketchbook__content__button {
